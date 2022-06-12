@@ -1,0 +1,86 @@
+CHANGES TO SYNCAL SINCE VERSION 1.0
+
+
+
+SYNCAL has been revised to make operation more compatible with the various
+clone machines now available.  The Mobile Communication Division still can
+not guarantee SYNCAL will run on all clones since there is such a variety
+to choose from.
+
+Both visible and non-visable changes have been made to the program to help
+ease its operation.  The GENERAL RULE:  Use the arrow keys to move the
+highlighted text to the function, option, file, etc.  you wish then press
+ENTER -- that is, Highlight-ENTER.
+
+--------------------------------------------------------------------------
+
+SYNCAL will now align both standard (LPU) and downband (LPV) products.
+
+      Before a MOD file is selected you will be prompted for either LPU or
+      LPV files.
+
+      The file selection window will only show standard or downbanded MODel
+      files.
+
+You can change disk drives or subdirectories from the file selection
+window.  Directories are labeled [ dir ] and disk drives are labeled
+[drive].  The directory ".." indicates the higher level directory and will
+not be present when you are in the root directory.
+
+Initially you must select a MOD file.  If you are SYNCALing multiple radios
+and use the change file option you can abort file selection by pressing the
+ESC key.
+
+---------------------------------------------------------------------------
+
+Various SYNCAL operations may be selected with the Function Keys (as
+before) or by using the general selection rule:  use the arrow keys to
+highlight a function then press ENTER to execute.
+
+      The PRINT and DISPLAY toggles must be pressed prior to an alignment.
+      F9 (display flag toggle) and F10 (print flag toggle) are disabled
+      while a radio is being SYNCALed.
+
+      You can only exit the program from the main menu by pressing F6 or
+      Highlight-ENTER.
+
+      SYNCAL may be aborted any time by pressing F5.
+
+---------------------------------------------------------------------------
+
+Many items have been moved from the ALTER CONSTANT menu and added to the
+main menu.
+
+      ZERO SYSTEM POINTERS has been changed to default to NO and is now
+      toggled from the main menu.
+
+      INIT ACTIVE BANKS also defaults to NO and is toggled from the main
+      menu.
+
+      INIT RADIO PARAMETERS option has been removed entirely (see RE-
+      ALIGNMENT).
+
+---------------------------------------------------------------------------
+
+If you have made changes to the synthesizer or VCO sections of the radio
+then use the RE-ALIGNMENT function from the main menu.  Radio data will not
+be effected.
+
+PERFORM ALIGNMENT must be used whenever the EEPROM has been changed.
+
+---------------------------------------------------------------------------
+
+Additional files on the SYNCAL disk:
+
+DTMF_DEV.EXE      This program allows the programmable DTMF deviation to be
+                  selected.  The program has been enhanced for more
+                  straightforward operation.
+
+DTMF_DEV.DOC      Instruction manual for DTMF_DEV.EXE.
+
+PASSWORD.EXE      This program allows the password to be changed and the
+                  PASSWORD feature to be enabled or disabled.
+
+PASSWORD.DOC      Instruction manual for PASSWORD.EXE.
+
+LPVxxxxA.MOD      A complete set of downband model files has been added.

@@ -1,0 +1,52 @@
+				DTMF_DEV 2.0
+
+The DTMF_DEV program is provided to facillate altering the DTMF deviation
+level.  This level is controlled by software and can be adjusted without
+disassembling the radio.
+
+The program is designed for use on IBM or IBM-compatible computers with a
+disk drive operating under DOS version 3.30 or compatible DOS.  The
+computer must also be equipped with an RS-232 interface and an LAA 0705
+interface (available from Bendix/King).
+
+
+
+Setting DTMF deviation
+
+1.	Configure the radio to send DTMF tones:
+
+	-- Use the UHF EDITOR to enable the DTMF tones.
+	
+					-or-
+	
+	-- Place the unit in programming mode and enable Function 5, Group 2
+	   of Ch 0.  (See the UHF/VHF programming manual)
+ 
+2.	Connect the radio to a modulation meter as described in SECTION V of
+	the LPU series maintenance manual.
+
+3.	Connect the radio to the computer using the LAA 0705 interface.
+
+4.	Type:  DTMF_DEV
+
+5.	Use the UP/DOWN arrow keys and select the COM port your LAA0705 is
+	connected to.
+
+6.	Every 4 seconds (or so) the computer will attempt to make connections
+	with the radio.  Either "Attempting Connection" or "Connection
+	Failed" will be displayed near the middle of the screen.
+
+	NOTE:  If you need to quit the program press the ESC key at any time.
+
+7.	The "DTMF Deviation Level Bar" will indicate your current relative FM
+	deviation for transmitted DTMF tones.  You may increase or decrease
+	deviation using the right or left arrow keys.
+
+8.	Press ENTER to download the new DTMF deviation to the radio. 
+	"DOWNLOADING" will momentarily flash in the middle of the screen.
+
+9.	Whenever "READY TO TEST" is highlighted in the middle of the screen
+	you may test the FM deviation of your radio.  Key the radio and press
+	a key while monitoring your deviation meter.
+
+10.	Repeat steps 7 through 9 until your deviation is correct.

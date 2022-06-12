@@ -1,0 +1,77 @@
+----------------------------------
+Setting the COM port for EPHTUNE |
+----------------------------------
+The default COM port for EPHTUNE is COM 1.  The COM port can be changed 
+to COM 2 in either of two ways.  The COM port can be specified on the command line, 
+e.g.,
+	
+EPHTUNE 2 <CR>
+
+or, the GFLG environment variable can set to indicate the COM 
+port.   
+	SET GFLG=-c2
+
+Note that the 'c' in -c2 must be lower case and only ports 1 and 2 are 
+valid.
+
+---------------
+Using EPHTUNE |
+---------------
+EPHTUNE allows the adjustment of 3 of the EPH Series radios operating 
+parameters: receiver tuning slope, transmitter high power set, and 
+transmitter low power set.
+
+*General*
+Connect the radio to an IBM PC or compatible computer using the EPH
+series programming/test cable.  This cable allows access to the antenna 
+and audio connectors while programming the radio.
+
+*Key functions*
+PgUp/PgDn	Increases or decreases the value of the highlighted 
+		setting displayed on the screen.  DOES NOT alter this
+		value in the radio.
+
+keypad +/-	Increases or decreases the value of the highlighted
+		setting and updates the highlighted value in the radio.
+
+ENTER		Updates the radio with all values displayed on the screen.
+
+F2		Updates all screen values with those obtained from the 
+		radio.
+
+numeric keys	Directly enters a value in the highlighted field.
+
+ESC		Exits the EPHTUNE program.
+
+*Reciever front end slope*
+To adjust the receiver front end slope, set up the test equipment to 
+measure sensitivity.  Program the radio and RF source to a frequency 
+near the high end of the band.  Adjust the coils in the receiver for 
+maximum sensitivity.  Program the radio and RF source for a frequency near 
+the low end of the band.  Invoke EPHTUNE.  If the radio EEPROM is new or 
+has been erased, enter an initial receiver slope setting of 26 and press 
+<ENTER>.  Using the '+' and '-' keys on the keypad, adjust the receiver 
+slope for maximum sensitivity.  This setting can be any number between 0 
+and 255.
+
+NOTE:  Because of RF interference from the computer, the radio may not 
+meet the sensitivity specification until disconnected and removed from the 
+immediate vicinity of the computer.
+
+
+Transmitter power settings
+Set up up the test equipment to measure transmitter power.  Program the 
+radio for the desired transmit frequency, and set the HI/LO power switch 
+as desired.  On the computer, use the cursor keys to move the cursor to 
+the HI or LO power setting.  Key the radio and measure the transmitter 
+power.  Unkey the radio.  Adjust the appropriate power setting and repeat 
+as necessary.  The transmitter power settings can be any number between 
+0 and 63.
+
+NOTE:  	The radio does not commumicate with the computer while 
+	transmitting!  Unkey the radio before changing any radio
+	settings.  An attempt to modify these values while trasmitting
+	will NOT damage the radio, but will cause an error to be displayed
+	at the bottom of the screen.  To clear this error, unkey the radio
+	and press the F2 key to re-read the radio settings.
+	
